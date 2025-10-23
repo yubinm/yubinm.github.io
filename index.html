@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yubin Moon — Portfolio</title>
+  <meta name="description" content="A playful garden-scrapbook portfolio for Your Name." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="paper">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Scrapbook Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- Postage-stamp logo (pure CSS) -->
+      <a class="stamp" href="#top" aria-label="Go to top">🌱</a>
+
+
+      <!-- Compact nav for mobile -->
+      <nav class="top-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#intro">Intro</a></li>   <!-- ← new -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><button id="water" class="btn btn--ghost" aria-pressed="false">💧 Water</button></li> -->
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Perforated torn edge -->
+    <div class="tear" aria-hidden="true"></div>
+    <div class="perfs" aria-hidden="true"></div>
+  </header>
+
+  <div class="layout">
+    <!-- Bookmark nav (desktop) -->
+    <aside class="bookmarks" aria-label="Section bookmarks">
+      <a class="bookmark" href="#about"><span>About</span></a>
+      <a class="bookmark" href="#projects"><span>Projects</span></a>
+      <a class="bookmark" href="#experience"><span>Experience</span></a>
+      <a class="bookmark" href="#contact"><span>Contact</span></a>
+    </aside>
+
+    <main id="main" class="content">
+      <!-- Hero “seed packet” -->
+      <section id="intro" class="packet packet--hero" aria-label="Intro">
+        <div class="tape tape--lt" aria-hidden="true"></div>
+        <div class="tape tape--rt" aria-hidden="true"></div>
+
+        <p class="eyebrow">pocket-garden</p>
+        <h1 class="hand big">I’m Yubin!</h1>
+        <p class="lead">
+          Current senior student at Colby College studying Statistics and Computer Science with a concentration in Artificial Intelligence
+        </p>
+        <p class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn btn--ghost" href="Yubin Moon - Resume Oct.pdf" target="_blank" rel="noopener">Resumé</a>
+        </p>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="packet">
+        <div class="tape tape--lb" aria-hidden="true"></div>
+        <div class="tape tape--rb" aria-hidden="true"></div>
+
+        <h2 class="hand">About</h2>
+        <p>
+          I've worked with Python and Java extensively, but recently I've been learning HTML, CSS, and Javascript. 
+        </p>
+        <ul class="chips" aria-label="Technologies">
+          <li>Python</li><li>HTML</li><li>CSS</li><li>Java</li><li>Javascript</li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="packet">
+        <h2 class="hand">Projects</h2>
+
+        <div class="seed-grid">
+          <article class="seed">
+            <header>
+              <h3>Pixel 2D Portfolio</h3>
+              <!-- <span class="seed__tag">UI • JS</span> -->
+            </header>
+            <p>2D-game version of my portfolio hosted on GitHub</p>
+            <p class="links">
+              <a href="https://yubinm.github.io/yubinm_2d.github.io/" target="_blank" rel="noopener">Live</a> ·
+              <!-- <a href="#" target="_blank" rel="noopener">Code</a> -->
+            </p>
+            <!-- Hidden details for the popup -->
+            <template class="seed-detail">
+                <p>
+                This is a Github-hosted website that gamefies my portfolio and experience using assets I've either modified from the Little Adventure spritesheet or made from scratch. 
+                This is based on a tutorial by JSLegendDev where I ultimately made creative changes afterwards. 
+                </p>
+                <ul>
+                <li>Languages: HTML, CSS, Kaboom</li>
+                <li>Applications: Tiled, VSCode</li>
+                <!-- <li></li> -->
+                </ul>
+            </template>
+          </article>
+
+          <article class="seed">
+            <header>
+              <h3>Emotive Robot Sound Design</h3>
+              <!-- <span class="seed__tag">A11y • Perf</span> -->
+            </header>
+            <p>Undergraduate research project with Prof. Hannen Wolfe at Colby College</p>
+            <p class="links">
+              <a href="HRI Moon Abstract.pdf" target="_blank" rel="noopener">Abstract</a> ·
+              <a href="https://github.com/hannahwolfe/HRI_Emotive_Sounds2/tree/Summer-25" target="_blank" rel="noopener">Code</a>
+            </p>
+            <!-- Hidden details for the popup -->
+            <template class="seed-detail">
+                <p>
+                    The purpose is to investigate the use of the Nao Robot, 
+                    as a medium of non-linguistic utterance communication with emotive sounds and gestures
+                    on a continuous spectrum of valence and energy that could be mapped on a 2D plane.
+                </p>
+                <ul>
+                <li>Language: Python</li>
+                <li>Applications: VSCode</li>
+                <!-- <li>Role: design system, animations, data layer…</li> -->
+                </ul>
+            </template>
+          </article>
+
+          <article class="seed">
+            <header>
+              <h3>Project Three</h3>
+              <span class="seed__tag">Animations</span>
+            </header>
+            <p>What you learned or the delightful bit.</p>
+            <p class="links">
+              <a href="#" target="_blank" rel="noopener">Live</a> ·
+              <a href="#" target="_blank" rel="noopener">Code</a>
+            </p>
+            <template class="seed-detail">
+                <p>
+                A longer blurb about the problem, your approach, and the outcome.
+                Mention tech, a11y/perf wins, and what you learned.
+                </p>
+                <ul>
+                <li>Feature A with brief explanation.</li>
+                <li>Impact: +X% metric, -Y ms TTI, etc.</li>
+                <li>Role: design system, animations, data layer…</li>
+                </ul>
+            </template>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="packet">
+        <h2 class="hand">Experience</h2>
+        <ul class="timeline" role="list">
+          <li class="row">
+            <div class="leaf" aria-hidden="true">☘️</div>
+            <div class="row__body">
+              <strong>Research Assistant — Colby College</strong>
+              <div class="muted">May 2025 – Current · Waterville, Maine</div>
+              <ul>
+                <li>Working with Professor Wolfe on dimensional design of emotive sounds for the Nao 6 robot using Python to
+                    generate music on a two-axis spectrum of valence and energy levels.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="leaf" aria-hidden="true">🍃</div>
+            <div class="row__body">
+              <strong>CS152 Teaching Assistant, CS333 Exam Grader, SC321 Assignment Grader — Colby College</strong>
+              <div class="muted">February 2023 – Present · Waterville, Maine</div>
+              <ul>
+                <li>Graded exams and quizzes for two sections of CS333 and assignments for SC321 </li>
+                <li>Co-taught CS152 lab
+                    sessions alongside professors while hosting evening TA hours in order to help students develop their problem
+                    solving skills in their projects and future assignments</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="leaf" aria-hidden="true">🌿</div>
+            <div class="row__body">
+              <strong>Software Engineering Intern — Bird Technologies</strong>
+              <div class="muted">May 2024 – August 2022 · Solon, Ohio</div>
+              <ul>
+                <li>Developed and maintained software Python packages using “Poetry” for current and upcoming Bird devices,
+                    implementing VISA, RS-232, and TCP/IP Raw Socket transports according to the SCPI-1999 Standard in order to
+                    eﬃciently manage both global and company-specific dependencies</li>
+                <li>Configured and managed libraries and artifacts using Azure DevOps, and authored YAML files for Azure Pipelines
+                    to automate package builds for each relevant product</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="leaf" aria-hidden="true">🌵</div>
+            <div class="row__body">
+              <strong>Support Center Assistant — Colby College IT Office</strong>
+              <div class="muted">August 2023 – December 2023 · Waterville, Maine</div>
+              <ul>
+                <li>Provided front-line support for students, staﬀ, and faculty regarding the Colby network and equipment in the
+                    classrooms and beyond</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <div class="leaf" aria-hidden="true">🌾</div>
+            <div class="row__body">
+              <strong>Summer Intern — Wateville Public Library</strong>
+              <div class="muted">May 2023 – August 2023 · Waterville, Maine</div>
+              <ul>
+                <li>Assisted patrons at the Waterville Public Library with finding information, helped books go through
+                    processing before release, as well as held summer physics clubs for middle schoolers</li>
+                <li>Created a Waterville Seed Library Excel Sheet so that the city could keep track of what was distributed or left behind</li>
+              </ul>
+            </div>
+          </li>
+          
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="packet packet--contact">
+        <h2 class="hand">Say hello</h2>
+        <p>Freelance, full-time, or fun collab? Let’s plant something together.</p>
+        <p class="cta">
+          <a class="btn" href="mailto:you@example.com">Email me</a>
+          <a class="btn btn--ghost" href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </section>
+
+      <footer class="site-footer" role="contentinfo">
+        <p class="muted">© <span id="year"></span> Your Name • planted with care.</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- floating droplets get appended here by JS -->
+  <div id="droplets" aria-hidden="true"></div>
+
+  <dialog id="project-modal" aria-labelledby="pm-title" aria-describedby="pm-desc">
+    <button class="pm-close" aria-label="Close dialog">✕</button>
+    <div class="pm-body">
+      <h3 id="pm-title" class="pm-title"></h3>
+      <div class="pm-tag" aria-hidden="true"></div>
+      <div id="pm-desc" class="pm-content"></div>
+    </div>
+  </dialog>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
