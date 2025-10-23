@@ -256,3 +256,41 @@ section.packet[id] { scroll-margin-top: var(--anchor-offset); }
     @keyframes modalIn { from { transform: translateY(10px); opacity: 0 } }
   }
   
+  /* Improve contrast for top-right nav in dark mode */
+@media (prefers-color-scheme: dark){
+    /* default (idle) stays subtle */
+    .top-nav a,
+    .top-nav button{
+      background: var(--card);
+      color: var(--ink); /* light text in dark mode */
+      border-color: color-mix(in oklab, var(--moss), white 25%);
+    }
+  
+    /* hover/focus: darker bg + white text for strong contrast */
+    .top-nav a:hover,
+    .top-nav a:focus-visible,
+    .top-nav button:hover,
+    .top-nav button:focus-visible{
+      background: color-mix(in oklab, var(--moss), black 35%); /* dark green */
+      color: #fff;
+      border-color: color-mix(in oklab, var(--moss), black 20%);
+    }
+  
+    /* optional: pressed/active feel */
+    .top-nav button[aria-pressed="true"]{
+      background: color-mix(in oklab, var(--moss), black 45%);
+      color: #fff;
+    }
+  }
+  @media (prefers-color-scheme: dark){
+    .btn.btn--ghost{
+      color: var(--ink);
+      border-color: color-mix(in oklab, var(--moss), white 25%);
+      background: transparent;
+    }
+    .btn.btn--ghost:hover,
+    .btn.btn--ghost:focus-visible{
+      background: color-mix(in oklab, var(--moss), black 35%);
+      color: #fff;
+    }
+  }
